@@ -1,0 +1,25 @@
+import "google/protobuf/empty.proto";
+
+package PortService;
+
+service Port {
+    rpc AddOrUpdate (AddOrUpdateRequest) returns (google.protobuf.Empty) {}
+}
+
+message Coordinates {
+    float longitude = 1;
+    float latitude = 2;
+}
+
+message AddOrUpdateRequest {
+    string name = 1;
+    string city = 2;
+    string country = 3;
+    repeated string alias = 4;
+    repeated string regions = 5;
+    Coordinates coordinates = 6;
+    string province = 7;
+    string timezone = 8;
+    repeated string unlocs = 9;
+    string code = 10;
+}
