@@ -1,3 +1,6 @@
+# api v1.0.0 => ./api
+## explicit; go 1.19
+api
 # github.com/golang/protobuf v1.5.2
 ## explicit; go 1.9
 github.com/golang/protobuf/jsonpb
@@ -137,3 +140,4 @@ gorm.io/gorm/utils
 ## explicit; go 1.19
 internal/db
 # internal/db => ./internal/db
+# api => ./api

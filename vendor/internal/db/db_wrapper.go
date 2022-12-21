@@ -9,13 +9,13 @@ type Database struct {
 	db *gorm.DB
 }
 
-var dbConnection *Database
+var DbConnection *Database
 
-func connect() error {
+func Connect() error {
 	db, err := gorm.Open(sqlite.Open("port.db"), &gorm.Config{})
 	if err != nil {
 		return err
 	}
-	dbConnection = &Database{db: db}
+	DbConnection = &Database{db: db}
 	return nil
 }

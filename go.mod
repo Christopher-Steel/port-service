@@ -3,8 +3,10 @@ module github.com/Christopher-Steel/port-service
 go 1.19
 
 require internal/db v1.0.0
-
 replace internal/db => ./internal/db
+
+require api v1.0.0
+replace api => ./api
 
 require (
 	google.golang.org/grpc v1.51.0
