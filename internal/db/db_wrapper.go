@@ -1,4 +1,4 @@
-package db
+package db_wrapper
 
 import (
 	"gorm.io/driver/sqlite"

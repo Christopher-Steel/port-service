@@ -3,6 +3,14 @@ module github.com/Christopher-Steel/port-service
 go 1.19
 
 require (
+	internal/db v1.0.0
+)
+
+replace (
+	internal/db => ./internal/db
+)
+
+require (
 	google.golang.org/grpc v1.51.0
 	google.golang.org/protobuf v1.27.1
 	gorm.io/driver/sqlite v1.4.3
