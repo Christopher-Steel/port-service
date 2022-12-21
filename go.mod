@@ -2,19 +2,13 @@ module github.com/Christopher-Steel/port-service
 
 go 1.19
 
-require (
-	internal/db v1.0.0
-)
+require internal/db v1.0.0
 
-replace (
-	internal/db => ./internal/db
-)
+replace internal/db => ./internal/db
 
 require (
 	google.golang.org/grpc v1.51.0
 	google.golang.org/protobuf v1.27.1
-	gorm.io/driver/sqlite v1.4.3
-	gorm.io/gorm v1.24.2
 )
 
 require (
@@ -26,4 +20,6 @@ require (
 	golang.org/x/sys v0.0.0-20220722155257-8c9f86f7a55f // indirect
 	golang.org/x/text v0.4.0 // indirect
 	google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013 // indirect
+	gorm.io/driver/sqlite v1.4.3 // indirect
+	gorm.io/gorm v1.24.2 // indirect
 )
